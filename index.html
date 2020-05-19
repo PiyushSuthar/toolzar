@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolZar - All in One tools</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ToolZar</h1>
+            <div class="ham">
+                <i data-feather="menu"></i>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="./assets/img/header.svg" height="100px" alt="">
+        <h1>ToolZar</h1>
+        <p>An all in one tool for your daily tech needs.</p>
+    </header>
+
+    <main>
+        <section>
+
+            <a class="card" href="instagram-image.html">
+                <aside>
+                    <i style="color: red;" height="50px" width="50px" data-feather="instagram"></i>
+                    <h3>Instagram Image Downloader</h3>
+                    <p>Download image from instagram. (Public Accounts Only)</p>
+                </aside>
+            </a>
+
+            <a class="card" href="instagram-video.html">
+                <aside>
+                    <i style="color: red;" height="50px" width="50px" data-feather="instagram"></i>
+                    <h3>Instagram Video Downloader</h3>
+                    <p>Download videos from instagram. (Public Accounts Only)</p>
+                </aside>
+            </a>
+
+            <a class="card" href="gdrive.html">
+                <aside>
+                    <i style="color: rgb(29, 89, 255);" height="50px" width="50px" data-feather="folder"></i>
+                    <h3>Google Drive Link</h3>
+                    <p>Convert Sharable link to Direct Download link.</p>
+                </aside>
+            </a>
+
+            <h2 style="font-weight: 500;">More To Come...</h2>
+
+        </section>
+    </main>
+    <footer style="text-align: center;">
+        <p>&copy Piyush Suthar</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(".ham").click(function(){
+            $("nav ul").toggle(200);
+        });
+
+        feather.replace()
+    </script>
+</body>
+</html>

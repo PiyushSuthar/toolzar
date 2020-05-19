@@ -1,0 +1,139 @@
+:root {
+    --color-secondary: #536DFE;
+}
+body{
+    padding: 0!important;
+}
+aside{
+    box-shadow: none!important;
+    border: none!important;
+    margin: 0!important;
+}
+header{
+    padding-top:5px!important ;
+}
+nav{
+    margin-bottom: 50px!important;
+}
+nav a {
+    color:#536DFE!important;
+}
+nav ul li a{
+    font-weight: 500;
+}
+.ham{
+    display: none;
+}
+button{
+    padding: 5px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-bottom: 20px;
+    transition:0.2s ease;
+    border-radius: 8px;
+}
+.card p{
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+}
+.card h3{
+    color: black;
+    font-weight: 500;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.input-container,.error,.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-container input{
+    flex-direction: row;
+    width: 60%;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    outline: none;
+}
+.result{
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    height: 50hv;
+}
+.result img{
+    width: 85%;
+    border-radius: 8px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.007),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.015),
+  0 12.5px 10px rgba(0, 0, 0, 0.023),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.033),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.046),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+/*Instagram Video Donwloader*/
+.video video{
+    max-height: 400px;
+}
+.video,#link{
+    display: none;
+    text-align: center;
+}
+.video{
+    flex-direction: column;
+    align-items: center;
+}
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*g Drive*/
+#result-container,#result-head{
+    display: none;
+    margin-top: 20px;
+}
+
+
+/*MObile*/
+@media only screen and (max-width: 600px) {
+    .ham{
+        display: flex;
+        height: 30px;
+        width: auto;
+    }
+    nav ul{
+        display: none;
+    }
+    nav{
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        text-align: center;
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .input-container input,.input{
+        width: 80%;
+    }
+    .video video{
+        width: 80%;
+    }
+}

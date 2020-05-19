@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"><h1>ToolZar</h1></a>
+            <div class="ham">
+                <i data-feather="menu"></i>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <i height="80px" width="80px" data-feather="instagram"></i>
+        <h1>Instagram Image Downloader</h1>
+    </header>
+    <main style="margin-top: -50px!important;">
+        <div id="error">
+        </div>
+        <div class="input-container">
+            <input placeholder="Video Link" id="input" type="url">
+            <button onclick="get()">Get</button>
+        </div>
+        <div id="vid-parent" class="video">
+            <video id="video" src=""  controls></video> <br>
+        </div>
+        <div class="download">
+            <a style="text-align: center;" href="#" id="link" download><button>Save</button></a>
+        </div>
+    </main>
+    <footer style="text-align: center;">
+        <p>&copy Piyush Suthar</p>
+    </footer>
+    <script src="./assets/js/instagram-video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(".ham").click(function(){
+            $("nav ul").toggle(200);
+        });
+
+        feather.replace()
+    </script>
+</body>
+</html>
