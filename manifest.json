@@ -1,0 +1,114 @@
+{
+    "dir": "ltr",
+    "lang": "English",
+    "name": "ToolZar",
+    "scope": "/toolzar/",
+    "display": "standalone",
+    "start_url": "https://piyushsuthar.codes/toolzar/",
+    "short_name": "ToolZar   All i",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "natural",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "images/ef9474a4-2d44-fdbc-ed94-6600d8ba7326.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "images/5ab1cedc-c218-ef1e-be19-adea59424631.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "images/838d00fb-260c-16d2-7e7f-f3b832f4c6bf.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "images/2d73c636-5131-b7c1-4423-809ea7d8c1f9.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "images/e25e8a71-8a50-1603-4a1e-a961e0042f61.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "images/a75e6022-910c-215d-c4c3-9147251976ce.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "images/469df014-92f0-4ffb-a639-681ba41d273f.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "images/28820818-d12e-e506-10c6-262e6b6303c2.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "images/30a066f0-da83-ce48-98e3-708353a8a187.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "images/bf434213-bc5f-0500-e861-ed7315279ed8.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/2880f3af-eb4b-a41f-bc18-0a9eb7309127.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "images/9d413620-8f05-06bc-5055-e2b508149bc5.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "images/06128c0d-3720-253e-0ae1-5e23dc70b2d7.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "images/9cb48905-cebc-ee66-ebdf-e6c2af5ef2c7.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "images/000035dd-c06e-31ed-b4c0-f520dcd9e21a.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "images/f22cae19-bef8-9e38-f13d-37f0e72fa691.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "images/fc72896f-0b10-13ed-30e8-f51310cc23ad.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "images/4bb7ca72-3a3a-6d1a-fc91-23273396352e.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "images/6f6b1bef-ce7d-001d-6626-0f76d09ffda7.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://piyushsuthar.codes/toolzar/",
+    "screenshots": []
+}

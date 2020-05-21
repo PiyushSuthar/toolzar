@@ -3,46 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IG Downloader</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ToolZar - All in One tools</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/"><h1>ToolZar</h1></a>
+            <h1>ToolZar</h1>
             <div class="ham">
                 <i data-feather="menu"></i>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <i height="80px" width="80px" data-feather="folder"></i>
-        <h1>Google Drive</h1>
-        <p>Google drive direct download link generator.</p>
+        <img src="./assets/img/header.svg" height="100px" alt="">
+        <h1>ToolZar</h1>
+        <p>An all in one tool for your daily tech needs.</p>
     </header>
-    <main style="margin-top: -50px!important;">
-        <div class="generator input-container">
-            <input placeholder="Your Google Drive Url" id="input" type="url">
-            <button onclick="gen()">Generate</button>
-        </div>
-        <h3 id="result-head">Result:</h3>
-        <div  id="result-container">
-            <div class="input-container">
-                <input class="input" id="result" type="url">
-                <button onclick="copy()">Copy</button>
-            </div>
-        </div>
+
+    <main>
+       <header>
+           <h1>You are offline,</h1>
+           <p>Please connect your internet and try again.</p>
+       </header>
     </main>
     <footer style="text-align: center;">
         <p>&copy Piyush Suthar</p>
     </footer>
-    <script src="./assets/js/gdrive.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(".ham").click(function(){
