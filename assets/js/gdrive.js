@@ -31,12 +31,6 @@ function gen(){
         result.value = link;
     }
     else{
-        const error = document.createElement("h4");
-        error.innerText= "Link Is Not Valid";
-        error.style = 'text-align:center;color:red;'
-        example.appendChild(error)
-        setTimeout(function(){
-            error.remove();
-          }, 5000);
+        document.getElementById("errornotice").style.display = "block";
     }
 }
