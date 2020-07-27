@@ -1,0 +1,62 @@
+:root {
+  /* Global Vars */
+  --backgroundcolorLight: #f5f3f3;
+  --SubtextColor: #6d6d6d;
+  -webkit-user-select: none;
+  --mainTextColor: #000000;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-overflow-scrolling: auto;
+
+  /* Card Variable */
+  --cardBackground: #ffffff;
+  --cardBoxShadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+
+  /* Category vars */
+  --CategoryBoxsShadow: 0px 8px 16px rgba(100, 100, 100, 0.25);
+
+  /* Loadier */
+  --loaderIcon: rgb(23, 23, 37);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.1s linear;
+}
+
+[data-theme="dark"] {
+  /* Global Vars */
+  --backgroundcolorLight: #181717;
+  --SubtextColor: #d2cdcd;
+  --mainTextColor: #ffffff;
+
+  /* Card Variable */
+  --cardBackground: #292929;
+  --cardBoxShadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Category vars */
+  --CategoryBoxsShadow: 0px 4px 10px #000000;
+
+  /* Loader */
+  --loaderIcon: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--backgroundcolorLight);
+}
+.main_body_conatainer {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 40px;
+}
+.error-text {
+  color: var(--SubtextColor);
+  text-align: center;
+  margin: 10px;
+  font-weight: 500;
+}

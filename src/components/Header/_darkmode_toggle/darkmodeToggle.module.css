@@ -1,0 +1,14 @@
+.darkmode_toggle {
+  animation: onLoad 0.4s;
+}
+@keyframes onLoad {
+  from {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1);
+  }
+}

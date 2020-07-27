@@ -1,0 +1,87 @@
+.cards_main_container {
+  margin-top: 20px;
+}
+.cards_title {
+  color: var(--SubtextColor);
+  font-weight: 550;
+  animation: cardTitle 0.3s ease;
+}
+.cards_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card_outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  padding: 10px 20px;
+  background: var(--cardBackground);
+  box-shadow: var(--cardBoxShadow);
+  border-radius: 16px;
+  margin: 10px 5px;
+  min-height: 100px;
+  animation: onLoad 0.5s ease;
+}
+@keyframes onLoad {
+  /* from {
+    transform: scale(0);
+    transform: translateY(40px);
+  }
+  50% {
+    transform: scale(1.02);
+    transform: translateY(-12px);
+  }
+  to {
+    transform: scale(1);
+    transform: translateY(0);
+  } */
+  from {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes cardTitle {
+  from {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.card_outer h4 {
+  color: var(--SubtextColor);
+  font-weight: 500;
+  animation: onLoad 0.8s ease;
+}
+.card_outer h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--mainTextColor);
+  animation: onLoad 0.5s ease;
+}
+@media only screen and (max-width: 600px) {
+  .card_link {
+    width: 100%;
+  }
+  .card_outer {
+    width: 100%;
+  }
+  .card_outer h1 {
+    font-size: 20px;
+  }
+  .card_outer h4 {
+    font-size: 15px;
+  }
+}

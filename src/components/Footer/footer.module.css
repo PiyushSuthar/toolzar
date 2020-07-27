@@ -1,0 +1,74 @@
+.footer_conatiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+  color: var(--mainTextColor);
+  flex-wrap: wrap;
+}
+.footer_copyright h6 {
+  font-weight: 300;
+  animation: bounceIn 0.5s ease;
+}
+.footer_copyright h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  animation: bounceIn 0.5s ease;
+}
+.footer_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer_link {
+  color: var(--SubtextColor);
+}
+
+.footer_icon {
+  color: var(--SubtextColor);
+  margin: 2px 0px 2px 10px;
+  background-color: var(--cardBackground);
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: var(--cardBoxShadow);
+  animation: scaleIn 0.3s ease;
+}
+@media only screen and (max-width: 600px) {
+  .footer_conatiner {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer_icon {
+    margin-top: 10px;
+  }
+  .footer_copyright {
+    text-align: center;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: translatey(-10px);
+  }
+  50% {
+    transform: translatey(4px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1);
+  }
+}

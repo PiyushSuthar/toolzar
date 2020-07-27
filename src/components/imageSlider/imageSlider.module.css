@@ -1,0 +1,7 @@
+.image_slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}

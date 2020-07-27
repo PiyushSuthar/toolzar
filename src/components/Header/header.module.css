@@ -1,0 +1,41 @@
+.header_home_conatainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  animation: onLoadAnimate 0.3s ease;
+}
+.header_home_title p {
+  color: var(--SubtextColor);
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+.header_home_title h1 {
+  color: var(--mainTextColor);
+  font-size: 38px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+[data-theme="dark"] {
+  --BackArrowColor: white;
+}
+[data-theme="light"] {
+  --BackArrowColor: black;
+}
+.header_backarrow {
+  color: var(--BackArrowColor);
+  animation: onLoadAnimate 0.3s ease;
+}
+
+@keyframes onLoadAnimate {
+  from {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

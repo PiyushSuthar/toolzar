@@ -1,0 +1,60 @@
+.textinput_container {
+  background-color: var(--cardBackground);
+  box-shadow: var(--cardBoxShadow);
+  border-radius: 16px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: textInput 0.5s ease;
+}
+.textinput_container button {
+  all: unset;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.textinput_main {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: none;
+  color: var(--SubtextColor);
+}
+.textinput_title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--SubtextColor);
+  padding: 10px 5px;
+  animation: textInputTitle 0.5s ease;
+}
+.textinput_button {
+  color: var(--SubtextColor);
+  animation: textInput 0.3s ease-in;
+}
+@keyframes textInput {
+  from {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes textInputTitle {
+  from {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
