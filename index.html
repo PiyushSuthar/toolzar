@@ -1,93 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToolZar - All in One tools</title>
-    <link rel="stylesheet" href="assets/css/mvp.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/mvp.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="assets/img/Toolzar.png">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="assets/img/Toolzar.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164785769-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-164785769-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-164785769-3');
-</script>
-
-</head>
-<body>
+      gtag("config", "UA-164785769-3");
+    </script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <h1>ToolZar</h1>
-            <div class="ham">
-                <i data-feather="menu"></i>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <img src="./assets/img/header.svg" height="100px" alt="">
+      <nav>
         <h1>ToolZar</h1>
-        <p>An all in one tool for your daily tech needs.</p>
+        <div class="ham">
+          <i data-feather="menu"></i>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="overlay">
+        <h1>TOOLZAR 2.0</h1>
+        <p>We have launched a new and better version of ToolZar.</p>
+        <a href="https://toolzar.netlify.app"
+          ><button>Yes,I want ToolZar 2.0</button></a
+        >
+        <!-- <button>No, I want to use this</button> -->
+      </div>
+      <!-- <img src="./assets/img/header.svg" height="100px" alt="" />
+      <h1>ToolZar</h1>
+      <p>An all in one tool for your daily tech needs.</p> -->
     </header>
 
     <main>
-        <section>
+      <section>
+        <a class="card" href="instagram-image.html">
+          <aside>
+            <i
+              style="color: red;"
+              height="50px"
+              width="50px"
+              data-feather="instagram"
+            ></i>
+            <h3>Instagram Image Downloader</h3>
+            <p>Download image from instagram. (Public Accounts Only)</p>
+          </aside>
+        </a>
 
-            <a class="card" href="instagram-image.html">
-                <aside>
-                    <i style="color: red;" height="50px" width="50px" data-feather="instagram"></i>
-                    <h3>Instagram Image Downloader</h3>
-                    <p>Download image from instagram. (Public Accounts Only)</p>
-                </aside>
-            </a>
+        <a class="card" href="instagram-video.html">
+          <aside>
+            <i
+              style="color: red;"
+              height="50px"
+              width="50px"
+              data-feather="instagram"
+            ></i>
+            <h3>Instagram Video Downloader</h3>
+            <p>Download videos from instagram. (Public Accounts Only)</p>
+          </aside>
+        </a>
 
-            <a class="card" href="instagram-video.html">
-                <aside>
-                    <i style="color: red;" height="50px" width="50px" data-feather="instagram"></i>
-                    <h3>Instagram Video Downloader</h3>
-                    <p>Download videos from instagram. (Public Accounts Only)</p>
-                </aside>
-            </a>
+        <a class="card" href="gdrive.html">
+          <aside>
+            <i
+              style="color: rgb(29, 89, 255);"
+              height="50px"
+              width="50px"
+              data-feather="folder"
+            ></i>
+            <h3>Google Drive Link</h3>
+            <p>Convert Sharable link to Direct Download link.</p>
+          </aside>
+        </a>
 
-            <a class="card" href="gdrive.html">
-                <aside>
-                    <i style="color: rgb(29, 89, 255);" height="50px" width="50px" data-feather="folder"></i>
-                    <h3>Google Drive Link</h3>
-                    <p>Convert Sharable link to Direct Download link.</p>
-                </aside>
-            </a>
-
-            <h2 style="font-weight: 500;">More To Come...</h2>
-
-        </section>
+        <h2 style="font-weight: 500;">More To Come...</h2>
+      </section>
     </main>
     <footer style="text-align: center;">
-        <p>&copy Piyush Suthar</p>
+      <p>&copy Piyush Suthar</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(".ham").click(function(){
-            $("nav ul").toggle(200);
-        });
+      $(".ham").click(function() {
+        $("nav ul").toggle(200);
+      });
 
-        feather.replace()
+      feather.replace();
     </script>
     <script type="module">
-        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+      import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
 
-        const el = document.createElement('pwa-update');
-        document.body.appendChild(el);
+      const el = document.createElement("pwa-update");
+      document.body.appendChild(el);
     </script>
-      <script crossorigin='anonymous' integrity='sha256-T8RTGotskdhLXy/3avHtzYliRm9WCbiiqm5dbCVH87s=' src='https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.1.0/instantclick.min.js'></script>
-  <script data-no-instant='true'>InstantClick.init();</script>
-</body>
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-T8RTGotskdhLXy/3avHtzYliRm9WCbiiqm5dbCVH87s="
+      src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.1.0/instantclick.min.js"
+    ></script>
+    <script data-no-instant="true">
+      InstantClick.init();
+    </script>
+  </body>
 </html>
