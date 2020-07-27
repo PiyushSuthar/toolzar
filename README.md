@@ -26,7 +26,7 @@
   </a>
 </p>
 
-## Tools
+## Tools :wrench:
 #### Instagram
 - [Image Downloader](https://toolzar.netlify.app/instagram/image)
 - [Video Downloader](https://toolzar.netlify.app/instagram/video)
@@ -36,7 +36,7 @@
 #### Google
 - [Google Drive Direct Downnload link Generator](https://toolzar.netlify.app/google/drive-link-gen)
 
-## Contributions
+## Contributions :dizzy:
 Contributions are welcomed.:fire:
 
 Even a small update is appreciated :sparkles:.
