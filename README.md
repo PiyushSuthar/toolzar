@@ -7,10 +7,10 @@
   <a href="https://app.netlify.com/sites/toolzar/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/cb090b00-c046-4c7b-b433-6451e525e270/deploy-status"></img>
   </a>
-  <a href="https://github.com/piyushsuthar/toolzar-2.0/issues">
+  <a href="https://github.com/piyushsuthar/toolzar/issues">
     <img src="https://img.shields.io/github/issues/PiyushSuthar/toolzar?style=flat-square"></img>
   </a>
-   <a href="https://github.com/piyushsuthar/toolzar-2.0/pulls">
+   <a href="https://github.com/piyushsuthar/toolzar/pulls">
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/piyushsuthar/toolzar?style=flat-square" />
    </a>
 </p>
