@@ -27,7 +27,8 @@
 
 ## Contributions
 Contributions are welcomed.:fire:
-Even a small update is helpful :sparkles:.
+
+Even a small update is appreciated :sparkles:.
 
 ## Local Development :construction:
 
