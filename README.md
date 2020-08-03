@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="https://raw.githubusercontent.com/PiyushSuthar/toolzar-2.0/master/public/images/006bd8c9-3a18-dd17-4575-7c2a52480a98.webPlatform.png?token=AHV6P5TPTNKP72PETPYBGES7E7K4O"></img>
+<img align="center" src="https://cdn.statically.io/gh/PiyushSuthar/toolzar/v2.0/public/images/c9a3ec0e-7c64-541c-bbc0-261e901fc1e8.webPlatform.png"></img>
 <h1 align="center">TOOLZAR 2.0</h1>
 <p align="center">:zap: Toolzar is an open-source web app made using ReactJS :art:.</p>
 </p>
