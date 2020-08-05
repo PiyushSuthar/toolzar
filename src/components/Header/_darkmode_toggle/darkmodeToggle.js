@@ -3,6 +3,10 @@ import { Moon, Sun } from "react-feather";
 import styles from "./darkmodeToggle.module.css";
 
 export default function DarkModeToggle() {
+  document.documentElement.setAttribute(
+    "data-theme",
+    localStorage.getItem("theme") || "light"
+  );
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   function toggleTheme() {
