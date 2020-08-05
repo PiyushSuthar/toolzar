@@ -5,6 +5,13 @@ import "./styles.css";
 import { InstagramImage, InstagramVideo } from "./pages/Instagram/index";
 import { DriveLinkGenerator, YoutubeDownloader } from "./pages/Google";
 
+import FloatingPrompt from "producthunt-floating-prompt";
+
+FloatingPrompt({
+  name: "Toolzar",
+  url: "https://www.producthunt.com/posts/toolzar"
+});
+
 export default function App() {
   return (
     <Router>

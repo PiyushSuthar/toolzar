@@ -8,6 +8,7 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "producthunt-floating-prompt": "1.0.7",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-feather": "2.0.8",
