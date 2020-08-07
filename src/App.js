@@ -4,6 +4,7 @@ import HomePage from "./pages/Home/index";
 import "./styles.css";
 import { InstagramImage, InstagramVideo } from "./pages/Instagram/index";
 import { DriveLinkGenerator, YoutubeDownloader } from "./pages/Google";
+import SharePage from "./pages/Share";
 
 import FloatingPrompt from "producthunt-floating-prompt";
 
@@ -18,6 +19,7 @@ export default function App() {
       <div className="main_body_conatainer">
         <Switch>
           <Route path="/" exact component={HomePage} />
+          <Route path="/share" component={SharePage} />
           <Route path="/instagram/image" component={InstagramImage} />
           <Route path="/instagram/video">
             <InstagramVideo title="Video Downloader" />

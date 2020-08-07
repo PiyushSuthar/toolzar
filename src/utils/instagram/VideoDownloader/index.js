@@ -5,7 +5,7 @@ function generateData(data = [], setState) {
       src: data.graphql.shortcode_media.video_url,
       isVideo: true
     });
-  } else {
+  } else if (data.graphql.shortcode_media.edge_sidecar_to_children) {
     data.graphql.shortcode_media.edge_sidecar_to_children.edges.map(
       (value, index) => {
         value.node.is_video
@@ -23,6 +23,14 @@ function generateData(data = [], setState) {
         return "";
       }
     );
+  } else {
+    videoArray.push({
+      src:
+        data.graphql.shortcode_media.display_resources[
+          [data.graphql.shortcode_media.display_resources.length - 1]
+        ].src,
+      isVideo: false
+    });
   }
   setState(videoArray);
 }

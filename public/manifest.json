@@ -93,6 +93,15 @@
   "lang": "English",
   "screenshots": [],
   "orientation": "portrait",
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
   "shortcuts": [
     {
       "name": "Instagram Image Downloader",
