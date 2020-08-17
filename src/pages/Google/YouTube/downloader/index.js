@@ -14,7 +14,7 @@ export default function YoutubeDownloader({ type }) {
     }
     function DownLoad() {
       var api = `https://covid-img.azurewebsites.net/${
-        type === "Mp3" ? "mp3" : "video"
+        type === "Mp3" ? "mp3" : "mp4"
       }?url=`;
       window.open(`${api}${url}`);
     }
