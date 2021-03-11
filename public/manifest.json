@@ -84,12 +84,11 @@
     }
   ],
   "description": "All the tools you need.",
-  "start_url": "https://toolzar.netlify.app/",
+  "start_url": ".",
   "scope": "/",
   "display": "standalone",
   "background_color": "#1C2022",
   "theme_color": "#1C2022",
-  "url": "https://toolzar.netlify.app/",
   "lang": "English",
   "screenshots": [],
   "orientation": "portrait",
