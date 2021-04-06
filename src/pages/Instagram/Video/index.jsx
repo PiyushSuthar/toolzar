@@ -3,6 +3,7 @@ import Header from "../../../components/toolsPage-componets/Header";
 import TextInput from "../../../components/toolsPage-componets/textInput";
 import VideoPlayer from "../../../components/videoPlayer";
 import { generateData } from "../../../utils/instagram/VideoDownloader";
+import IGCraper from "igcraper";
 
 export default function InstagramVideo({ title }) {
   // const [isSingle, setIsSingle] = useState(false);
@@ -12,37 +13,31 @@ export default function InstagramVideo({ title }) {
   const [isError, setError] = useState(false);
 
   useEffect(() => {
-    NoIdeaWhatToKeepTheName(url);
+    handleSubmit(url);
   }, [url]);
 
   useEffect(() => {
     const parsedUrl = new URL(window.location);
     if (!parsedUrl.searchParams.get("url")) return;
     if (parsedUrl.searchParams.get("url").includes("instagram.com")) {
-      NoIdeaWhatToKeepTheName(parsedUrl.searchParams.get("url"));
+      handleSubmit(parsedUrl.searchParams.get("url"));
     }
   }, []);
 
-  function NoIdeaWhatToKeepTheName(funcUrl) {
+  function handleSubmit(funcUrl) {
     if (!funcUrl.includes("instagram")) return;
+    const igCraper = new IGCraper();
     setData([]);
     setError(false);
     const parsedUrl = new URL(funcUrl);
-    const api = `https://www.instagram.com/${parsedUrl.pathname}?__a=1`;
-    fetch(api)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.graphql.shortcode_media.video_url) {
-          // setData(data.graphql.shortcode_media.video_url);
-          generateData(data, setData);
-          // setIsSingle(true);
-          setLoading(false);
-        } else {
-          generateData(data, setData);
-          // setData(data.graphql.shortcode_media.edge_sidecar_to_children.edges);
-          // setIsSingle(false);
-          setLoading(false);
-        }
+    const api = `https://www.instagram.com${parsedUrl.pathname}`;
+
+    igCraper
+      .getPost(api)
+      .then((res) => {
+        const { dataArray } = igCraper.filterPost(res);
+        setData(dataArray);
+        setLoading(false);
       })
       .catch((err) => {
         setError(true);

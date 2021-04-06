@@ -8,6 +8,7 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "igcraper": "^0.0.1",
     "preact": "10.5.12",
     "producthunt-floating-prompt": "1.0.7",
     "react-feather": "2.0.8",
@@ -16,7 +17,8 @@
   },
   "devDependencies": {
     "@prefresh/vite": "2.1.0",
-    "vite": "^2.0.5"
+    "vite": "^2.0.5",
+    "vite-plugin-pwa": "^0.6.5"
   },
   "scripts": {
     "dev": "vite",
