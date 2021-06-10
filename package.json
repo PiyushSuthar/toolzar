@@ -9,26 +9,22 @@
   "main": "src/index.js",
   "dependencies": {
     "igcraper": "^0.0.1",
-    "preact": "10.5.12",
     "producthunt-floating-prompt": "1.0.7",
     "react-feather": "2.0.8",
-    "react-helmet": "6.1.0",
-    "react-router-dom": "5.2.0"
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@prefresh/vite": "2.1.0",
-    "vite": "^2.0.5",
-    "vite-plugin-pwa": "^0.6.5"
+    "@types/node": "15.12.2",
+    "@types/react": "17.0.11",
+    "@types/react-dom": "17.0.7",
+    "typescript": "4.3.2"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  }
 }
