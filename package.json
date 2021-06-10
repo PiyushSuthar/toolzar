@@ -9,11 +9,10 @@
   "main": "src/index.js",
   "dependencies": {
     "igcraper": "^0.0.1",
-    "producthunt-floating-prompt": "1.0.7",
-    "react-feather": "2.0.8",
     "next": "10.2.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-feather": "2.0.8"
   },
   "devDependencies": {
     "@types/node": "15.12.2",
