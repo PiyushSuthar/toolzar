@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import Header from "../../components/Header/header";
 
 export default function Share() {
-  const parsedUrl = new URL(window.location);
-  const url = parsedUrl.searchParams.get("url");
   useEffect(() => {
+    const parsedUrl = new URL(window.location);
+    const url = parsedUrl.searchParams.get("url");
     if (url) {
       if (url.includes("instagram")) {
         window.location.href = `https://${parsedUrl.hostname}/instagram/video?url=${url}`;
