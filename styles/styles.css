@@ -79,4 +79,17 @@ body {
   color: var(--SubtextColor);
   background-color: var(--cardBackground);
   box-shadow: var(--cardBoxShadow);
+  animation: slide 0.3s ease-in;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
