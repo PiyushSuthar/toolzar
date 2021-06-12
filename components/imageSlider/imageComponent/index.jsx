@@ -11,7 +11,7 @@ export default function Image({ url }) {
   // } else {
   return (
     <div className={styles.image_container}>
-      <img crossOrigin="anonymous" src={url} alt="Instagram" />
+      <img src={url} alt="Instagram" />
       <a href={url + "&dl=1"} style={{ width: "auto" }}>
         <Download size="40px" className={styles.image_download} />
       </a>

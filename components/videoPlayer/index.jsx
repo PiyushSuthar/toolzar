@@ -16,13 +16,16 @@ export default function VideoPlayer({ data, isloading }) {
   } else {
     return (
       <div className={styles.videoPlayer}>
-        {IGData.map((value, index) =>
-          value.isVideo ? (
-            <VideoComponent key={index} src={value.src} />
+        {IGData.map((value, index) => {
+          const src = `https://instagram-bypass.vercel.app/convert?url=${encodeURIComponent(
+            value.src
+          )}`;
+          return value.isVideo ? (
+            <VideoComponent key={index} src={src} />
           ) : (
-            <ImageComponent url={value.src} key={index} />
-          )
-        )}
+            <ImageComponent url={src} key={index} />
+          );
+        })}
       </div>
     );
   }
