@@ -17,7 +17,13 @@ export default function VideoComponent({ src }) {
         <p>Download</p>
       </a>
       {/* )} */}
-      <video src={src} className={styles.video} controls />
+      <video
+        src={`https://instagram-bypass.vercel.app/convert?url=${encodeURIComponent(
+          src
+        )}`}
+        className={styles.video}
+        controls
+      />
     </div>
   );
 }
