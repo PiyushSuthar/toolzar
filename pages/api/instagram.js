@@ -17,7 +17,7 @@ export default async (req, res) => {
             headers: {
                 cookie: process.env.COOKIE
             }
-        }).then(res => res.json())
+        }).then(r => r.json())
 
         const filtered = IgCraper.filterPost(post)
         res.json(filtered)
