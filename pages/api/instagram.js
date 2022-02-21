@@ -13,12 +13,13 @@ export default async (req, res) => {
     try {
         const IgCraper = new igcraper()
         // const post = await IgCraper.getPost(url)
-        const post = await fetch(url + "?__a=1", {
+        const reqwest = await fetch(url + "?__a=1", {
             headers: {
                 cookie: process.env.COOKIE
             }
-        }).then(r => r.json())
+        })
 
+        const post = await reqwest.json()
         const filtered = IgCraper.filterPost(post)
         res.json(filtered)
     } catch (error) {
