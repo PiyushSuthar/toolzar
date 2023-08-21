@@ -15,7 +15,8 @@ export default async (req, res) => {
         // const post = await IgCraper.getPost(url)
         const reqwest = await fetch(url + "/?__a=1&__d=dis", {
             headers: {
-                cookie: process.env.COOKIE
+                "cookie": process.env.COOKIE,
+                "User-Agent": iphone_ua, "x-ig-app-id": "936619743392459"
             }
         })
 
