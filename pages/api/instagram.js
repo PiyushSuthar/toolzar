@@ -16,7 +16,7 @@ export default async (req, res) => {
         const reqwest = await fetch(url + "?__a=1&__d=dis", {
             headers: {
                 "cookie": process.env.COOKIE,
-                "User-Agent": iphone_ua, "x-ig-app-id": "936619743392459"
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36", "x-ig-app-id": "936619743392459"
             }
         })
 
