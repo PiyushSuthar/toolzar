@@ -1,4 +1,4 @@
-// import igcraper from 'igcraper'
+import igcraper from 'igcraper'
 /**
  * @param {import("next").NextApiRequest} req
  * @param {import("next").NextApiResponse} res
@@ -11,7 +11,7 @@ export default async (req, res) => {
         })
     }
     try {
-        // const IgCraper = new igcraper()
+        const IgCraper = new igcraper()
         // const post = await IgCraper.getPost(url)
         const reqwest = await fetch(url + "/?__a=1&__d=dis", {
             headers: {
@@ -20,8 +20,8 @@ export default async (req, res) => {
         })
 
         const post = await reqwest.json()
-        const filtered = filterPost(post)
-        // const filtered = IgCraper.filterPost(post)
+        // const filtered = filterPost(post)
+        const filtered = IgCraper.filterPost(post)
         res.json(filtered)
     } catch (error) {
         res.status(500).json({
