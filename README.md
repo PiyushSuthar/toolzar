@@ -1,8 +1,11 @@
+## *No Longer Maintained*
+
 <p align="center">
 <img align="center" src="https://cdn.statically.io/gh/PiyushSuthar/toolzar/v2.0/public/images/c9a3ec0e-7c64-541c-bbc0-261e901fc1e8.webPlatform.png"></img>
 <h1 align="center">TOOLZAR 2.0</h1>
 <p align="center">:zap: Toolzar is an open-source web app made using ReactJS :art:.</p>
 </p>
+
 
 <p align="center">
   <a href="https://app.netlify.com/sites/toolzar/deploys" target="_blank">
@@ -26,6 +29,7 @@
   </a>
 </p>
 
+> Instagram "anything" downloading services won't work. If you wish to work on it, fork it.
 ## Tools :wrench:
 #### Instagram
 - [Image Downloader](https://toolzar.netlify.app/instagram/image)
